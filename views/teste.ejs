@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<style media="screen">
+  .fotos{
+    width: 100px;
+    height: 100px;
+  }
+</style>
+
+<body>
+  <div id="root"></div>
+
+<script type="text/babel">
+  let nome = 'Ailton';
+  let year = new Date();
+
+            ReactDOM.render(
+              <div>
+                <img className='fotos' src="https://uploads.metropoles.com/wp-content/uploads/2020/08/07165951/aaron-burden-h7wpIMY3O3E-unsplash-1-600x400.jpg" alt=""/>
+                <img className='fotos' src="https://www.minutoseguros.com.br/blog/wp-content/uploads/2019/06/balloon-4176942_960_720.jpg" alt=""/>
+                <img className='fotos' src="https://aeromagic.com.br/wp-content/uploads/2020/08/voo-de-balao-06.jpeg" alt=""/>
+              </div>,
+              document.getElementById('root')
+            );
+</script>
+</body>
+
+</html>
